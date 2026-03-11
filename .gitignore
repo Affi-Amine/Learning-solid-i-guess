@@ -1,0 +1,7 @@
+# Only track the teaching folder and repo meta files
+*
+!.gitignore
+!README.md
+!CLAUDE.md
+!teaching/
+!teaching/**
