@@ -226,6 +226,101 @@ flowchart TB
 
 ---
 
+## 8. Putting It All Together: An Airline System Example
+
+Everything in this chapter comes alive when you see a real system modeled from **actors → needs → features → domains**.
+
+**[Interactive diagram (LikeC4 Playground)](https://playground.likec4.dev/share/dhsF_JSbf_/)**
+
+The diagram maps an airline system across three layers:
+
+### Layer 1: Actors — Who uses the system?
+
+| Actor | Goal |
+|---|---|
+| Passengers | Book and manage flights |
+| Crew Members | Access schedules and assignments |
+| Sales Staff | Process bookings and manage customers |
+
+### Layer 2: Needs — What do they need?
+
+Each actor has specific needs — these are the **use cases** the system must serve:
+
+```mermaid
+flowchart LR
+    subgraph passengers ["Passengers"]
+        direction TB
+        P1["Find the right flight"]
+        P2["Secure my seat"]
+        P3["Pay safely"]
+        P4["Board without friction"]
+    end
+
+    subgraph crew ["Crew Members"]
+        direction TB
+        C1["Know my schedule"]
+        C2["Prepare for flights"]
+    end
+
+    subgraph sales ["Sales Staff"]
+        direction TB
+        S1["Handle customer requests"]
+        S2["Keep records accurate"]
+    end
+
+    passengers ~~~ crew ~~~ sales
+```
+
+### Layer 3: Domains and Features — How is it built?
+
+Needs map to **features**, organized by **domain** — not by infrastructure:
+
+```mermaid
+flowchart TB
+    subgraph booking ["Booking Domain"]
+        direction TB
+        BF1["Ticket Booking"]
+        BF2["Seat Assignment"]
+        BF3["Boarding Pass Gen"]
+    end
+
+    subgraph commerce ["Commerce Domain"]
+        direction TB
+        CF1["Payment Processing"]
+        CF2["Price Calculation"]
+        CF3["Flight Search"]
+    end
+
+    subgraph crewops ["Crew Operations Domain"]
+        direction TB
+        OF1["Crew Scheduling"]
+        OF2["Crew Assignment"]
+    end
+
+    subgraph access ["Customer Access Domain"]
+        direction TB
+        AF1["Customer Auth"]
+        AF2["Sales Portal"]
+    end
+
+    booking ~~~ commerce
+    crewops ~~~ access
+```
+
+### Why This Matters for Clean Code
+
+| Chapter Concept | How the Diagram Shows It |
+|---|---|
+| **"Serves the needs of users"** | Actors → Needs → Features. The system exists to serve actor needs. |
+| **Screaming architecture** | Domains named after business concepts (Booking, Commerce), not infrastructure. |
+| **Simple Design** | Each feature does one thing. No bloated "AirlineManager" class. |
+| **Structure vs. DX** | Domains provide structure. The actor→need→feature flow provides discoverability. |
+| **Consistency** | Every domain follows the same pattern: domain → features. |
+
+Features are also tagged by **risk level** (high, medium, low) — making it visible where problems are likely. That's **feedback** for developers.
+
+---
+
 ## Key Takeaways
 
 1. **Clean code = Simple Design**: tests pass, no duplication, maximum clarity, minimum elements

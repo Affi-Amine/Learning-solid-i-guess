@@ -27,6 +27,7 @@ Seven principles that fix problems at any stage of human interaction. Four impro
 **Limit** possible actions so you do the right thing.
 
 Four types:
+
 - **Physical**: `const` can't be redeclared, `static` accessed only through class
 - **Cultural**: coding conventions, community standards
 - **Semantic**: Value Objects enforce domain rules via factory methods
@@ -39,6 +40,7 @@ Key application: **thin interfaces** — minimize the public API, encapsulate co
 The **relationship between controls and what they control**.
 
 Two sub-principles:
+
 - **Grouping**: related things together (high cohesion)
 - **Proximity**: controls near what they control (no anemic domain models)
 
@@ -69,3 +71,4 @@ The **umbrella principle** — can the user figure out what actions are possible
 - [Human-Centered Design](./human-centered-design.md) — the philosophy these principles belong to
 - [Conceptual Models](./conceptual-models.md) — deeper dive
 - [Thin Interfaces](./thin-interfaces.md) — key application of constraints
+

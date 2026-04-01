@@ -8,12 +8,14 @@ A **conceptual model** is a high-level mental explanation of how something works
 
 ## Examples
 
-| Thing | Full Truth | Good Enough Conceptual Model |
-|---|---|---|
-| Elevators | Complex machinery, counterweights, safety systems | Press button, doors open, press floor, it goes there |
-| The Cloud | AWS EC2, databases, networking, replication | "My files are stored somewhere on the internet" |
-| React | Virtual DOM, reconciliation, fiber architecture | "It re-renders when state changes" |
-| Repository Pattern | Query builders, connection pools, transactions | "It knows how to store and retrieve my objects" |
+
+| Thing              | Full Truth                                        | Good Enough Conceptual Model                         |
+| ------------------ | ------------------------------------------------- | ---------------------------------------------------- |
+| Elevators          | Complex machinery, counterweights, safety systems | Press button, doors open, press floor, it goes there |
+| The Cloud          | AWS EC2, databases, networking, replication       | "My files are stored somewhere on the internet"      |
+| React              | Virtual DOM, reconciliation, fiber architecture   | "It re-renders when state changes"                   |
+| Repository Pattern | Query builders, connection pools, transactions    | "It knows how to store and retrieve my objects"      |
+
 
 ## Why It Matters
 
@@ -43,3 +45,4 @@ The conceptual model is the **end product** of good design.
 
 - [Human-Centered Design](./human-centered-design.md)
 - [HCD Principles](./hcd-principles.md)
+
