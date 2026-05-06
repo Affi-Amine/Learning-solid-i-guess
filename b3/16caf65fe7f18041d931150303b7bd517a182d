@@ -1,0 +1,61 @@
+teaching/part-v-oo-design-with-tests/05-detecting-code-smells-and-anti-patterns.md
+  d43a5cde06c23aac 1-477
+teaching/concepts/law-of-demeter.md
+  d43a5cde06c23aac 1-122
+teaching/concepts/object-design.md
+  d43a5cde06c23aac 1-58
+teaching/concepts/responsibility-driven-design.md
+  d43a5cde06c23aac 1-85
+teaching/concepts/non-functional-requirements.md
+  d43a5cde06c23aac 1-79
+teaching/concepts/roles-and-responsibilities.md
+  d43a5cde06c23aac 1-99
+teaching/concepts/refactoring-recipes.md
+  d43a5cde06c23aac 1-138
+teaching/concepts/tell-dont-ask.md
+  d43a5cde06c23aac 1-120
+teaching/concepts/object-stereotypes.md
+  d43a5cde06c23aac 1-127
+teaching/part-v-oo-design-with-tests/04-object-calisthenics.md
+  d43a5cde06c23aac 1-431
+teaching/concepts/object-capabilities.md
+  d43a5cde06c23aac 1-94
+teaching/part-v-oo-design-with-tests/02-responsibility-driven-design-101.md
+  d43a5cde06c23aac 1-356
+teaching/concepts/object-calisthenics.md
+  d43a5cde06c23aac 1-75
+teaching/part-v-oo-design-with-tests/03-rdd-process-by-example.md
+  d43a5cde06c23aac 1-361
+teaching/concepts/primitive-obsession.md
+  d43a5cde06c23aac 1-91
+teaching/concepts/code-smell-categories.md
+  d43a5cde06c23aac 1-98
+teaching/concepts/control-styles.md
+  d43a5cde06c23aac 1-98
+teaching/concepts/crc-cards.md
+  d43a5cde06c23aac 1-102
+teaching/concepts/anti-patterns.md
+  d43a5cde06c23aac 1-91
+teaching/part-v-oo-design-with-tests/01-why-and-how-to-learn-oo-design.md
+  d43a5cde06c23aac 1-294
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "b316caf65fe7f18041d931150303b7bd517a182d",
+  "prompts": {
+    "d43a5cde06c23aac": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "35761c3f-8b89-461e-992b-527a35571ca9",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Affi-Amine",
+      "messages": [],
+      "total_additions": 3396,
+      "total_deletions": 0,
+      "accepted_lines": 3396,
+      "overriden_lines": 0
+    }
+  }
+}
