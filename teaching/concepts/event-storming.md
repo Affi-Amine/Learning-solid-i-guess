@@ -25,6 +25,7 @@ An interactive workshop where developers and domain experts use **sticky notes o
 ## What You Get
 
 At the end of a session:
+
 - A timeline of the entire business process
 - All commands (features) identified
 - Subdomains named and bounded
@@ -33,14 +34,17 @@ At the end of a session:
 
 ## Event Storming vs Event Modelling
 
-| | Event Storming | Event Modelling |
-|---|---|---|
-| UI/queries | Hard to discover | Rough UI sketches included |
-| Cross-subdomain flows | Messy on linear timeline | Swimlanes per subdomain |
-| Best for | Initial domain discovery | Detailed system design |
+
+|                       | Event Storming           | Event Modelling            |
+| --------------------- | ------------------------ | -------------------------- |
+| UI/queries            | Hard to discover         | Rough UI sketches included |
+| Cross-subdomain flows | Messy on linear timeline | Swimlanes per subdomain    |
+| Best for              | Initial domain discovery | Detailed system design     |
+
 
 ## Related
 
 - [Domain Events](./domain-events.md) — the building blocks plotted in Event Storming
 - [DDD](./ddd.md) — Event Storming is a core DDD practice
 - [Subdomains](./subdomains.md) — discovered through Event Storming
+
